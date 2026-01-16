@@ -1,0 +1,522 @@
+ *{
+  box-sizing: border-box;
+ }
+
+ body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(desktop.png);
+  background-color: #ff7978;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+.container{
+     height: 700vh;
+}
+ h1, .txt, .pricetxt, #btn{
+color: #fff;
+ }
+
+ i, .error-message{
+    color: #fe7977;
+ }
+
+ .formbox{
+    background: #fff;
+ }
+
+ .price{
+    background: #5d53a5;
+ }
+
+ #btn{
+    background-color:#37cd8a ;
+    border: none;
+    border-radius: 5px;
+ }
+
+ .foot{
+    color:#c3c0d1;
+ }
+
+ .red{
+    color: #fb6e72;
+ }
+
+ .inputbox{
+    display: flex;
+   justify-content: end;
+    align-items: center;
+    position: relative;
+ }
+  
+
+ i{
+    z-index: 10;
+    position: absolute;
+    margin-right: 3%;
+    height:20px ;
+    width: 20px;
+     
+ }  
+
+ .error-message{
+    position: relative;
+ }
+
+ .formgrop{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+ }
+
+  
+ 
+
+ @media screen and (max-width: 968px){
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        max-width: 20ch;
+        line-height: 70px;
+    }
+
+    .container{
+      
+        margin: 4rem auto 2rem;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+     
+    .left, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+    .txt{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 31ch;
+        font-size: 1.3rem;
+    }
+
+    .price{
+        margin: 2rem auto 1.5rem;
+        border-radius: 10px;
+        width: 450px;
+        display: flex;
+        justify-content: center;
+         box-shadow: 0px 10px 10px #d76e71;
+    }
+
+    .pricetxt{
+        width: 20ch;
+        text-align: center;
+        font-size: 1.1rem;
+
+    }
+
+    .bold{
+       font-size: 1.3rem;
+    }
+
+    .formbox{
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        border-radius: 10px;
+          box-shadow: 0px 10px 10px #d76e71;
+    }
+
+    .foot{
+        font-size: 1rem;
+        max-width: 35ch;
+        text-align: center;
+        margin: 0 auto;
+        color: #c3c0d1;
+    }
+   
+    .formgrop {
+        margin: 0 auto 1.5rem;
+        width: 85%;
+      
+       display: flex;
+        flex-direction: column;
+   
+       
+    }
+     
+    #signup{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputbox{
+        width: 100%;
+        height: 60px;
+    }
+       
+    input{
+        width: 100%;
+        border: 1px solid #dfdfdf;
+       height: 100%;
+        margin: auto;
+        border-radius: 7px;
+        font-size: 1.1rem;
+        padding-left: 1rem;
+    }
+    .error-message{
+        font-size: 1.1rem;
+    }
+    
+
+    .error-message{
+        font-size: 0.8rem;
+    }
+    
+    #btn{
+        width: 360px;
+       height: 60px;
+       font-size: 1rem;
+        box-shadow: 0px 2px 10px #47bf8f;
+    }
+
+    .foot{
+        margin-top: 1.5rem;
+        font-size: 0.9rem;
+    }
+     
+   
+     
+ }
+
+ @media screen and (max-width: 500px){
+    h1{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+
+    .formbox{
+        width: 370px;
+    }
+
+    .price{
+        width: 370px
+    }
+
+    .pricetxt{
+        font-size: 1rem;
+    }
+    .bold{
+        font-size: 1.18rem;;
+    }
+
+    #btn{
+        width: 330px;
+      
+    }
+
+    .txt{
+        font-size: 1.1rem;
+    }
+
+   .formgrop{
+    width: 90%;
+   }
+
+ }
+
+ @media screen and (max-width: 400px){
+    h1{
+        font-size: 2.2rem;
+        line-height: 40px;
+    }
+
+    .formbox{
+        width: 320px;
+    }
+
+    .price{
+        width: 320px
+    }
+
+    .pricetxt{
+        font-size: 0.9rem;
+    }
+    .bold{
+        font-size: 1rem;;
+    }
+
+    #btn{
+        width: 290px;
+        height: 50px;
+        font-size: 0.9rem;
+    }
+
+    .txt{
+        font-size: 1.1rem;
+    }
+
+   .formgrop{
+    width: 90%;
+  
+   }
+
+   .inputbox{
+    height: 50px;
+   }
+   
+   input{
+    font-size: 1rem;
+   }
+
+   ::placeholder{
+    font-size: 0.9rem;
+   }
+
+   .foot{
+    font-size: 0.8rem;
+   }
+ }
+
+ @media screen and (max-width: 330px){
+    h1{
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+
+    .formbox{
+        width: 230px;
+    }
+
+    .price{
+        width: 230px
+    }
+
+    .pricetxt{
+        font-size: 0.8rem;
+    }
+    .bold{
+        font-size: 0.9rem;;
+    }
+
+    #btn{
+        width: 200px;
+        height: 50px;
+        font-size: 0.8rem;
+    }
+
+    .txt{
+        font-size: 1.1rem;
+    }
+
+   .formgrop{
+    width: 94%;
+  
+   }
+
+   .inputbox{
+    height: 43zpx;
+   }
+   
+   input{
+    font-size: 1rem;
+   }
+
+   .error-message{
+    font-size: 0.7rem
+   }
+
+   ::placeholder{
+    font-size: 0.8rem;
+   }
+
+   .foot{
+    font-size: 0.7rem;
+   }
+ }
+
+ @media screen and (min-width: 969px){
+ 
+     
+    h1{
+        font-size: 2rem;
+        
+        max-width: 20ch;
+        line-height: 40px;
+    }
+
+    .container{
+      
+        margin:  0 auto ;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    
+     
+    .left {
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+     
+    
+    
+    }
+
+    .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    }
+
+    .txt{
+       margin-left: 1.7rem;
+         max-width: 50ch;
+        font-size: 0.9rem;
+    }
+
+    .price{
+        margin: 2rem auto 1.5rem;
+        border-radius: 10px;
+        width: 350px;
+        height: 67px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         box-shadow: 0px 10px 10px #d76e71;
+    }
+
+    .pricetxt{
+        width: 20ch;
+        text-align: center;
+        font-size: 0.85rem;
+
+    }
+
+    .bold{
+       font-size: 0.96rem;
+    }
+
+    .formbox{
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        border-radius: 10px;
+          box-shadow: 0px 10px 10px #d76e71;
+    }
+
+    .foot{
+        font-size: 1rem;
+        max-width: 35ch;
+        text-align: center;
+        margin: 0 auto;
+        color: #c3c0d1;
+    }
+   
+    .formgrop {
+        margin: 0 auto 0.7rem;
+        width: 85%;
+      
+       display: flex;
+        flex-direction: column;
+   
+       
+    }
+     
+    #signup{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inputbox{
+        width: 100%;
+        height: 50px;
+    }
+       
+    input{
+        width: 100%;
+        border: 1px solid #dfdfdf;
+       height: 100%;
+        margin: auto;
+        border-radius: 7px;
+        font-size: 0.8rem;
+        padding-left: 1rem;
+    }
+    .error-message{
+        font-size: 1.1rem;
+    }
+    
+
+    .error-message{
+        font-size: 0.8rem;
+    }
+    
+    #btn{
+        width: 295px;
+       height: 45px;
+       font-size: 0.7rem;
+        box-shadow: 0px 2px 10px #47bf8f;
+    }
+
+    .foot{
+        margin-top: 1.5rem;
+        font-size: 0.7rem;
+    }
+    
+    ::placeholder{
+        font-size: 0.8rem;
+    }
+   
+     
+ }
+
+
+ @media screen and (min-width: 1200px){
+    h1{
+        font-size:2.2rem;
+        line-height: 50px;
+    }
+
+    .txt{
+        font-size: 1rem;
+    }
+
+    .error-message{
+       margin: 0 0 -0.1rem;
+    }
+ }
